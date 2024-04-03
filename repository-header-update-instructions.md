@@ -2,6 +2,7 @@
 - Clone the repository.
 - Create a new branch called repository-header-update.
 - Add file header.md to folder .config/
+  File content from https://raw.githubusercontent.com/StratusGrid/terraform-readme-template/main/header/README.md
 - Enable the header function in terraform-docs by adding the following three lines to file .terraform-docs.yml
 ```
 header-from: ./.config/header.md
@@ -20,4 +21,5 @@ alias pre-commit-run="curl -s -o '.pre-commit-config.yaml' https://raw.githubuse
 ```bash
 pre-commit-run
 ```
+- Clean up trivial security warnings
 - Push the branch with changes to GitHub and create the PR. Add reviewers.
