@@ -22,5 +22,5 @@ alias pre-commit-run="curl -s -o '.pre-commit-config.yaml' https://raw.githubuse
 ```bash
 pre-commit-run
 ```
-- Clean up trivial security warnings
+- Clean up Trivy security warnings
 - Push the branch with changes to GitHub and create the PR. Add reviewers.
