@@ -31,11 +31,11 @@ sed -i '' '1i\'$'\n''header-from: ./.config/header.md\'$'\n\n' .config/.terrafor
 sed -i '' -e '/content:/a\'$'\n''\ {{ .Header }}\'$'\n' .config/.terraform-docs.yml
 
 sed -i '' -e '/show:/a\'$'\n''\ \ \ \ - header' .config/.terraform-docs.yml
-
+```
 # PRECOMMIT CONFIG
 export PRECOMMIT_BRANCH="main"
 alias pre-commit-run="curl -s -o '.pre-commit-config.yaml' https://raw.githubusercontent.com/StratusGrid/workflow-config/$PRECOMMIT_BRANCH/precommit-config/.pre-commit-config.yaml --next -o '.prettierignore' https://raw.githubusercontent.com/StratusGrid/workflow-config/$PRECOMMIT_BRANCH/precommit-config/.prettierignore --next -o '.tflint.hcl' https://raw.githubusercontent.com/StratusGrid/workflow-config/$PRECOMMIT_BRANCH/precommit-config/.tflint.hcl && pre-commit run -a ; rm '.pre-commit-config.yaml' '.prettierignore' '.tflint.hcl' ; rm -rf '.pre-commit-trivy-cache'"
-
+```
 pre-commit-run
 
 pre-commit-run
