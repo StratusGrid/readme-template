@@ -12,7 +12,7 @@ git branch repository-header-update
 
 git checkout repository-header-update
 
----
+```
 touch .config/header.md && echo '<p align="center">                                                                                                                                            
                                                                                 
   <img src="https://github.com/StratusGrid/terraform-readme-template/blob/main/header/stratusgrid-logo-smaller.jpg?raw=true" />
@@ -24,7 +24,7 @@ touch .config/header.md && echo '<p align="center">
     <a href="https://stratusgrid.com/blog">Blog</a>
   </p>                    
 </p>' >> .config/header.md
----
+```
 
 sed -i '' '1i\'$'\n''header-from: ./.config/header.md\'$'\n\n' .config/.terraform-docs.yml
 
