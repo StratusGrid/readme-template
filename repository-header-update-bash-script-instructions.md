@@ -17,20 +17,23 @@ touch .config/header.md && echo '<p align="center">
                                                                                 
   <img src="https://github.com/StratusGrid/terraform-readme-template/blob/main/header/stratusgrid-logo-smaller.jpg?raw=true" />
   
-  <p align="center">                                                           
-    <a href="https://stratusgrid.com/book-a-consultation">Contact Us Test</a> |                  
-    <a href="https://stratusgrid.com/cloud-cost-optimization-dashboard">Stratusphere FinOps</a> |
-    <a href="https://stratusgrid.com">StratusGrid Home</a> |
+  <p align="center">
+    <a href="https://stratusgrid.com/book-a-consultation">Contact Us Test</a>
+    <a href="https://stratusgrid.com/cloud-cost-optimization-dashboard">Stratusphere FinOps</a>
+    <a href="https://stratusgrid.com">StratusGrid Home</a>
     <a href="https://stratusgrid.com/blog">Blog</a>
-  </p>                    
+  </p>
 </p>' >> .config/header.md
 ```
-
+```
 sed -i '' '1i\'$'\n''header-from: ./.config/header.md\'$'\n\n' .config/.terraform-docs.yml
-
+```
+```
 sed -i '' -e '/content:/a\'$'\n''\ {{ .Header }}\'$'\n' .config/.terraform-docs.yml
-
+```
+```
 sed -i '' -e '/show:/a\'$'\n''\ \ \ \ - header' .config/.terraform-docs.yml
+```
 ```
 # PRECOMMIT CONFIG
 export PRECOMMIT_BRANCH="main"
