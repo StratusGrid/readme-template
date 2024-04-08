@@ -1,17 +1,22 @@
 Execute the folowing commands in the terminal (macOS) Github folder:
-
+```
 eval "$(ssh-agent -s)"
-
+```
+```
 ssh-add --apple-use-keychain ~/.ssh/GITHUB_PRIVATE_HUB
-
+```
+```
 git clone git@github.com:StratusGrid/REPOSITORY_NAME.git
-
+```
+```
 cd REPOSITORY_NAME
-
+```
+```
 git branch repository-header-update
-
+```
+```
 git checkout repository-header-update
-
+```
 ```
 touch .config/header.md && echo '<p align="center">                                                                                                                                            
                                                                                 
