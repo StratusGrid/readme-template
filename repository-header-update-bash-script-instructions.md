@@ -26,12 +26,8 @@ touch .config/header.md && echo '<p align="center">
 </p>' >> .config/header.md
 ```
 ```
-sed -i '' '1i\'$'\n''header-from: ./.config/header.md\'$'\n\n' .config/.terraform-docs.yml
-```
-```
-sed -i '' -e '/content:/a\'$'\n''\ {{ .Header }}\'$'\n' .config/.terraform-docs.yml
-```
-```
+sed -i '' '1i\'$'\n''header-from: ./.config/header.md\'$'\n\n' .config/.terraform-docs.yml &&
+sed -i '' -e '/content:/a\'$'\n''\  {{ .Header }}\'$'\n' .config/.terraform-docs.yml &&
 sed -i '' -e '/show:/a\'$'\n''\ \ \ \ - header' .config/.terraform-docs.yml
 ```
 ```
