@@ -53,3 +53,37 @@ git add .config/.terraform-docs.yml .config/header.md README.md
 git commit -m "repository-header-update"
 git push --set-upstream origin repository-header-update
 ```
+PR description:
+```
+## Change description
+
+Repository header update
+
+## Type of change
+- [ ] Bug fix (fixes an issue)
+- [x] New feature (adds functionality)
+
+## Related issues
+
+> Fix [#1](No Applicable) 
+
+## Checklists
+
+### Development
+
+- [x] Lint rules pass locally
+- [x] Application changes have been tested thoroughly
+- [ ] Automated tests covering modified code pass
+
+### Security
+
+- [x] Security impact of change has been considered
+- [x] Code follows company security practices and guidelines
+
+### Code review 
+
+- [x] Pull request has a descriptive title and context useful to a reviewer. Screenshots or screencasts are attached as necessary
+- [x] "Ready for review" label attached and reviewers assigned
+- [ ] Changes have been reviewed by at least one other contributor
+- [ ] Pull request linked to task tracker where applicable
+```
