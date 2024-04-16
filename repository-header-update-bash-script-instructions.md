@@ -93,7 +93,7 @@ Create GitHub PR using the web:
 ```
 gh pr create --web
 ```
-### Repository release update
+Repository release update
 ```
 git tag $VERSION
 ```
