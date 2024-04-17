@@ -93,3 +93,13 @@ Create GitHub PR using the web:
 ```
 gh pr create --web
 ```
+Repository release update
+```
+git tag $VERSION
+```
+```
+git push origin --tags
+```
+```
+gh release create $VERSION --generate-notes
+```
